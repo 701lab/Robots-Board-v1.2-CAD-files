@@ -5,7 +5,7 @@
 ## This repo contains
 Autodesk Eagle CAD files for robots board v1.2 with schematics and PCB for a single board and PCB files for a pannel of 4 boards with 100x96mm (so it can be ordered as a pannel from chines manufacturers for a small price).
 
-Open source **setup software for the board** can be found [here](https://github.com/701lab/rbv1.2-implementation). T
+Open source **setup software for the board** can be found [here](https://github.com/701lab/rbv1.2-implementation).
 
 ### 3D model of the pannel of boards
 
