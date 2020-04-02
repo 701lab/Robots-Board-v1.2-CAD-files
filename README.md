@@ -1,35 +1,14 @@
-# Robots board v1.2
-In this repository you can find libraries for fast start with robots board v1.2 (panel of 4 boards on the picture) software development.
+## What is Robots board v1.2?
  
- 
+**Robots board v1.2** is a cost affective board to implement small differential drive robots, for example, balancing robot. It uses stm32g071cbu MCU, DRV8848 motor driver to control two small BDC motors, ICM-20600 3-axis gyroscope and accelerometer, and NRF24l01+ as a radio module. Board support motors with incremental encoders and has a connector for UART communication.
+
+## This repo contains
+Autodesk Eagle CAD files for robots board v1.2 with schematics and PCB for a single board and PCB files for a pannel of 4 boards with 100x96mm (so it can be ordered as a pannel from chines manufacturers for a small price).
+Open source setup software for the board can be found [here](https://github.com/701lab/rbv1.2-implementation). This software implements all hardware related functions, so you can start developing your system without thinking about hardware stuff from the very beginning.
+
+### 3D model of the pannel of boards
+
 ![](images/rbv1.2.jpg)
 
-This repository is made really poorly, but now it is the best i can do. Will try to improve it with time.
 
-## What files are in here?
-1. rb1_2.h/.c - files with all the hardware setup and basic usefull functions for the board
-2. (not yet) motor library
-3. (not yet) working nrf library
-
-## How to use this files?
-
-
-
-## To do list
-- [ ] write clock setup;
-- [ ] write USART handler;
-- [ ] write NRF24 handler;
-- [ ] write code for speed and position control;
-- [ ] write ICM-20600 handler;
-
-### Сторонние мысли
-
-- [ ] Можно написать функцию инициализации, в которой будет будет много логических переменных аля init(int32_t LEDs, int32_motor1 ...). Соответственно внутри кода будут проверки (if(LED > 1)
-
-
-- [ ] Пока просто любопытно, что эффкетивнее, сранивать == или сравнивать > < по командам ассемблера. А также как в командах ассемблера отображается обявление RCC->чет |= чет1 | чет2 | чет3; - одной строкой или отдельной строкой на каждое или.
-
-
-
-
-
+ 
